@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">   
+    <style>
+        body {
+            background-color: rgba(231, 0, 0, 255);
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+        }
+
+        .content {
+            text-align: justify;
+            max-width: 800px;
+            color: white;
+            
+            size: 20px;
+            top: 100px;
+            position: absolute;
+            left: 90px;
+            bottom: 500px;
+        }
+
+        img {
+            max-width: 50%;
+            height: auto;
+            margin-top: 20px;
+            align-self: flex-end;
+            position: absolute;
+            top: 8px;
+            right: 200px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+    }
+        .flip-card-container {
+            display:flex;
+            justify-content: space-between;
+            margin-top: 310px;
+            margin-bottom: 20px;
+          margin-left: 0px;
+    }
+
+   
+    .flip-card {
+        background-color: transparent;
+        width: 900px;
+        height: 300px;
+        margin-right: 5px;
+        }
+
+        .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        }
+        
+
+        .flip-card-front {
+        background-color: rgba(87,18,18,255);
+        color: white;
+        }
+
+        .flip-card-back {
+        background-color: rgba(87,18,18,255);
+        color: white;
+        transform: rotateY(180deg);
+        }
+
+        div.flip-card-front h1{
+           
+            padding: 80px;
+        }
+        div.flip-card-back p{
+            padding: 20px;
+        }
+        .btn.btn-primary{
+            background-color: aqua;
+            width: 300px;
+        }
+
+        .nav{
+            background-color: rgba(231, 0, 0, 255);
+            width: fit-content;
+            color: white;
+            margin-left: 100px;
+
+        }
+        footer{
+            color: azure;
+        }
+
+        .navbar-nav a.nav-item.nav-link {
+            color: white; /* Set the text color to white */
+            
+        }
+    </style>
+</head>
+<body>
+
+<!-- 
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home</a>
+            <a class="nav-item nav-link" href="shopping.html">products</a>
+            <a class="nav-item nav-link" href="shopping.html">Shoping Cart</a>
+            <a class="nav-item nav-link" href="#con">Contact US</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+      -->
+    
+
+    <div class="content">
+        <h1>Down with the State</h1>
+        <p>Abandon the left vs right paradigm and adopt new ideals, where <br>
+            consistency and logic reign supreme.</p>
+    </div>
+
+    <img src="images/image.png" alt="logo" width="600px" height="300px">
+
+    <!-- <div class="container">
+        <div class="row">
+          <div class="col-sm"> -->
+            
+         
+    <div class="flip-card-container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h1>Google</h1>
+                </div>
+                <div class="flip-card-back">
+                    
+                    <p>Google LLC is an American multinational technology company focusing on artificial intelligence, online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, and consumer electronics.</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h1>Amazon</h1>
+                </div>
+                <div class="flip-card-back">
+                    
+                    <p>Amazon.com, Inc. is an American multinational technology company focusing on e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence.</p>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h1> Redhat </h1>
+                </div>
+                <div class="flip-card-back">
+                    
+                    <p>Red Hat is an enterprise software company with an open source development model. </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <button type="button" class="btn btn-primary"><a href="shopping.html">Go to Shopping</a></button>
+   
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h1> Redhat </h1>
+            </div>
+            <div class="flip-card-back">
+                
+                <p>Red Hat is an enterprise software company with an open source development model. </p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- </div>
+    </div>
+</div> -->
+
+<br>
+<footer>
+    <p id="con">Contact Information:</p>
+    <ul>
+        <li><strong>Name:</strong> <input type="text" id="name" required></li> <br>
+        <li><strong>Email:</strong> <input type="email" id="email" required></li> <br>
+        <li><strong>Phone:</strong> <input type="tel" id="phone" required></li> <br>
+    </ul>
+    <p>&copy; 2023 Shopping</p>
+</footer>
+</body>
+</html>
